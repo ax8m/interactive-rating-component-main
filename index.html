@@ -1,49 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Interactive rating component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <script src="./main.js"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
 
   <!-- Rating state start -->
 
-  How did we do?
+  <div id="main">
+    <!-- CARD START -->
+    <div class="card">
+      <!-- STAR ICON start -->
+      <div class="star_icon">
+        <img src="./images/icon-star.svg" alt="" srcset="">
+      </div>
+      <!-- STAR ICON END -->
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+      <!-- TEXT START -->
+      <div class="paragraph">
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
 
-  1 2 3 4 5
+      </div>
+      <!-- TEXT END -->
 
-  Submit
+      <!-- RATE START -->
+      <div id="rate">
+        <h3 id="number">1</h3>
+        <h3>2</h3>
+        <h3>3</h3>
+        <h3>4</h3>
+        <h3>5</h3>
+      </div>
+      <!-- RATE END -->
+
+      <!-- BUTTON START -->
+      <div>
+        <button type="submit" id="btn" disabled>SUBMIT</button>
+      </div>
+      <!-- BUTTON END -->
+    </div>
+    <!-- CARD END -->
+  </div>
+
+
+
+  <!-- 1 2 3 4 5
+
+  Submit -->
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
 
-  You selected <!-- Add rating here --> out of 5
+  <!-- You selected  //Add rating here// out of 5
 
   Thank you!
 
   We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  don’t hesitate to get in touch! -->
 
   <!-- Thank you state end -->
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+
+<script>
+  let getRate = document.getElementById("number")
+  // let getNum = getRate.getElementsByTagName("h3")[0].value()
+  console.log(getRate)
+</script>
+
 </html>

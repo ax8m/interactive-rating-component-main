@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(18, 20, 23);
+    font-family: 'Overpass', sans-serif;
+    font-size: 15px;
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.card {
+    background-color: rgb(26, 29, 36);
+    width: 350px;
+    height: 350px;
+    border-radius: 40px;
+    padding: 32px;
+}
+
+.star_icon {
+    /* margin: 15px;
+    margin-bottom: 30px; */
+    background: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph h1 {
+    color: white;
+}
+
+.paragraph p {
+    color: hsl(216, 12%, 54%);
+    letter-spacing: 0.5px;
+}
+
+#rate {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#rate h3 {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 3;
+    transition: background-color 0.5s, color 0.4s;
+}
+
+#rate h3:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: whitesmoke;
+}
+
+/* Button Before Choice Rate */
+#btn {
+    width: 350px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: hsl(25, 97%, 53%);
+    color: whitesmoke;
+    transition: background-color 0.5s, color 0.4s;
+    opacity: 50%;
+}
+
+
+
+#btn:hover {
+    background-color: whitesmoke;
+    color: hsl(25, 97%, 53%);
+}
