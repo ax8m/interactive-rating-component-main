@@ -21,10 +21,12 @@
     .attribution {
       font-size: 11px;
       text-align: center;
+      margin-top: 25px;
+      color: whitesmoke;
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: hsl(25, 97%, 53%);
     }
   </style>
 </head>
@@ -35,7 +37,7 @@
 
   <div id="main">
     <!-- CARD START -->
-    <div class="card">
+    <div id="card_1" class="card_rating">
       <!-- STAR ICON start -->
       <div class="star_icon">
         <img src="./images/icon-star.svg" alt="" srcset="">
@@ -55,11 +57,11 @@
 
       <!-- RATE START -->
       <div id="rate">
-        <h3 id="number">1</h3>
-        <h3>2</h3>
-        <h3>3</h3>
-        <h3>4</h3>
-        <h3>5</h3>
+        <h3 class="number" onclick="rating(1)">1</h3>
+        <h3 class="number" onclick="rating(2)">2</h3>
+        <h3 class="number" onclick="rating(3)">3</h3>
+        <h3 class="number" onclick="rating(4)">4</h3>
+        <h3 class="number" onclick="rating(5)">5</h3>
       </div>
       <!-- RATE END -->
 
@@ -70,38 +72,52 @@
       <!-- BUTTON END -->
     </div>
     <!-- CARD END -->
+
+    <!-- THank you card start -->
+    <div id="card_2" class="thanks_card">
+      <!-- image thanks start -->
+      <div id="img_thanks">
+        <img src="./images/illustration-thank-you.svg" alt="" srcset="">
+      </div>
+      <!-- image thanks end -->
+
+      <!-- the rate result start -->
+      <div id="result">
+        <span>`You selected 5 out of 5</span>
+      </div>
+      <!-- the rate result end -->
+
+      <!-- text sstart -->
+      <div class="paragraph" style="text-align: center; margin-top: 45px;">
+        <h1> Thank you!</h1>
+
+        <p>We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+      <!-- text end -->
+    </div>
+    <!-- Thank you card end -->
   </div>
 
 
 
-  <!-- 1 2 3 4 5
-
-  Submit -->
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected  //Add rating here// out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
 
 
-  <!-- <div class="attribution">
+
+
+
+
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="#">Aiman Adel</a>.
+  </div>
 </body>
 
 <script>
-  let getRate = document.getElementById("number")
-  // let getNum = getRate.getElementsByTagName("h3")[0].value()
-  console.log(getRate)
+
+  let result = `You selected 3 out of 5`
+  document.getElementById("result").innerHTML = `<span>${result}</span>`
+  console.log()
 </script>
 
 </html>

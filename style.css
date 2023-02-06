@@ -1,3 +1,28 @@
+@keyframes fade {
+    from {
+        transform: translateY(0);
+        opacity: 100;
+    }
+
+    to {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
+
+@keyframes appear {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 100;
+    }
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -12,13 +37,16 @@ body {
     margin-top: 80px;
 }
 
-.card {
+#card_1,
+#card_2 {
     background-color: rgb(26, 29, 36);
     width: 350px;
     height: 350px;
     border-radius: 40px;
     padding: 32px;
 }
+
+
 
 .star_icon {
     /* margin: 15px;
@@ -73,13 +101,68 @@ body {
     font-weight: 600;
     background-color: hsl(25, 97%, 53%);
     color: whitesmoke;
-    transition: background-color 0.5s, color 0.4s;
+    transition: background-color 0.5s, color 0.4s, opacity 0.4s;
     opacity: 50%;
 }
 
-
-
-#btn:hover {
+/* #btn:hover {
     background-color: whitesmoke;
     color: hsl(25, 97%, 53%);
+} */
+
+.after_choice {
+    opacity: 100% !important;
+}
+
+.after_choice:hover {
+    background-color: whitesmoke !important;
+    color: hsl(25, 97%, 53%) !important;
+    cursor: pointer;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+    opacity: 0;
+}
+
+
+/* style THANks image  */
+.thanks_card {
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+.appear {
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-100%);
+}
+
+#img_thanks {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    width: 300px;
+    height: 40px;
+    background: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    margin-top: 20px;
+    margin: 15px auto;
+    text-align: center;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result span {
+    margin: auto;
 }
