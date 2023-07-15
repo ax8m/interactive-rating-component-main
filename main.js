@@ -1,7 +1,10 @@
 console.log("Hello world")
 
 function rating(num) {
-    console.log(num)
+
+   
+    // document.getElementById(`num_${num}`).className = "choise";
+
     let x = document.getElementById("btn");
     x.className = "after_choice";
 

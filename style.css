@@ -91,6 +91,11 @@ body {
     color: whitesmoke;
 }
 
+.choise {
+    background-color: rgb(124, 135, 152) !important;
+    color: whitesmoke !important;
+}
+
 /* Button Before Choice Rate */
 #btn {
     width: 350px;
